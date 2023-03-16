@@ -1,0 +1,29 @@
+.goBackWrap {
+  position: absolute;
+  top: 21px;
+  left: 50px;
+  width: 108px;
+  height: 24px;
+  padding: 4px 0 4px 4px;
+}
+.goBack {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.goBack:hover {
+  transform: scale(1.1);
+}
+.goBackImg {
+  width: 16px;
+  height: 16px;
+}
+.goBackText {
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #000000;
+  text-transform: uppercase;
+}
