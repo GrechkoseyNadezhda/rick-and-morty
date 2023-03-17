@@ -1,7 +1,7 @@
 .goBackWrap {
   position: absolute;
-  top: 21px;
-  left: 50px;
+  top: 23px;
+  left: 24px;
   width: 108px;
   height: 24px;
   padding: 4px 0 4px 4px;
@@ -26,4 +26,11 @@
   line-height: 1.17;
   color: #000000;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .goBackWrap {
+    top: 21px;
+    left: 50px;
+  }
 }

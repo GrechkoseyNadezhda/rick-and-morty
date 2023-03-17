@@ -1,12 +1,14 @@
 .list {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px 20px;
+  gap: 32px;
+  margin: 0 auto;
 }
 .item {
-  width: 240px;
+  width: 312px;
   transition: all 0.5s;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
     0px 2px 4px rgba(0, 0, 0, 0.14);
@@ -19,8 +21,8 @@
 }
 
 .imgWrap {
-  width: 240px;
-  height: 168px;
+  width: 312px;
+  height: 232px;
   overflow: hidden;
 }
 
@@ -44,4 +46,18 @@
   line-height: 1.5;
   letter-spacing: 0.25px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 480px) {
+  .list {
+    gap: 24px 20px;
+  }
+  .item {
+    width: 240px;
+  }
+
+  .imgWrap {
+    width: 240px;
+    height: 168px;
+  }
 }

@@ -1,8 +1,9 @@
 .form {
   display: flex;
   align-items: center;
-  margin-bottom: 61px;
-  width: 1020px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 1020px;
   height: 56px;
   background-color: #fff;
   overflow: hidden;
@@ -12,7 +13,7 @@
 
 .btn {
   display: inline-block;
-  width: 56px;
+  width: 48px;
   height: 56px;
   border: 0;
   background-color: inherit;
@@ -36,7 +37,6 @@
   font-size: 20px;
   border: none;
   outline: none;
-  padding-left: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 5;
@@ -44,4 +44,10 @@
 }
 .input::placeholder {
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+  .form {
+    margin-bottom: 61px;
+  }
 }

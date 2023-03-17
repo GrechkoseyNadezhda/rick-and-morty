@@ -1,6 +1,12 @@
 .homeWrapper {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   margin: 0 auto;
-  padding-top: 86px;
-  padding-bottom: 188px;
+  padding: 92px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .homeWrapper {
+    padding: 86px 0 188px 0;
+  }
 }
