@@ -5,6 +5,12 @@
   padding: 92px 24px;
 }
 
+.paginationWrap {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 312px;
+}
+
 @media screen and (min-width: 768px) {
   .homeWrapper {
     padding: 86px 0 188px 0;

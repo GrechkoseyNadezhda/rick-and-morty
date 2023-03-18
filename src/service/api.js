@@ -4,30 +4,23 @@ const instanceCharacter = axios.create({
   baseURL: 'https://rickandmortyapi.com/api',
 });
 
-export const getAllCharacters = async () => {
-  const { data } = await instanceCharacter.get('/character', {
-    params: {
-      page: 1,
-    },
-  });
-  return data;
-};
-
 export const getCharacterById = async id => {
   const { data } = await instanceCharacter.get(`/character/${id}`);
   return data;
 };
 
-export const getCharacterByQuery = async query => {
+export const getCharacterByQuery = async (query, page) => {
   if (query.length === 0) {
-    const { data } = await instanceCharacter.get('/character', {
-      page: 1,
+    const { data } = await instanceCharacter.get(`/character`, {
+      params: {
+        page,
+      },
     });
     return data;
   } else {
-    const { data } = await instanceCharacter.get(`/character/?name=${query}`, {
+    const { data } = await instanceCharacter.get(`/character`, {
       params: {
-        page: 1,
+        page,
         name: query,
       },
     });

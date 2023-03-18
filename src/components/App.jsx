@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
+      <Route path="charcter" element={<Home />}></Route>
       <Route path="character/:idCharacter" element={<Details />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
